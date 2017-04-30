@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Super Sprinter 3000 - Add new Story </title>
+</head>
+<body>
+    <h1> User story manager - Add new story </h1>
+    <form action = "http://localhost:5000/story" method="post">
+        <p> Story title </p>
+        <textarea name="title" rows="1" cols="30"></textarea>
+        <p> User story </p>
+        <textarea name="user_story" rows="5" cols="30"></textarea>
+        <p> Acceptance criteria </p>
+        <textarea name="criteria" rows="5" cols="30"></textarea>
+        <p> Business value </p>
+        <select name="business">
+            <option> 1000 </option>
+            <option> 500 </option>
+            <option> 0 </option>
+        </select>
+        <p> Estimation time (h) </p>
+        <select name="time">
+            <option> 10 </option>
+            <option> 20 </option>
+            <option> 30 </option>
+            <option> 40 </option>
+        </select>
+        <p> Status </p>
+        <select name="status">
+            <option> Planning </option>
+            <option> To Do </option>
+            <option> In Progress </option>
+            <option> Review </option>
+            <option> Done </option>
+        </select>
+        <p><input type="submit" value="Submit"></p>
+    </form>
+    
+</body>
